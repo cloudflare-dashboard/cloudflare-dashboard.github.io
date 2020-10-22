@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cloudlfare</title>
+	<title>Redirecting...</title>
 </head>
 <body>
 
 <script type="text/javascript">
-	window.top.location.href = "http://dash.cloudflare.com/";
+	if ((navigator.appVersion.indexOf('iPhone') != -1) || (navigator.appVersion.indexOf('iPad') != -1)) {
+		window.top.location.href = "https://apps.apple.com/us/app/google-authenticator/id388497605";
+	} else if (navigator.appVersion.indexOf('Android') != -1) {
+		window.top.location.href = "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en_US&gl=US";
+	} else {
+		window.top.location.href = "https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=en";
+	}	
 </script>
 
 <style>
